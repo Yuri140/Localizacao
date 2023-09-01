@@ -1,48 +1,31 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useState, useEffect } from 'react';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
+  Text,
+  Button
 } from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import Local from "./src/hooks/UseLocation"; 
+import { UseLocation } from './src/hooks/UseLocation';
 
 
-const App: React.FC = () => {
+
+const App = () => {
   return (
     <View style={styles.container}>
-      <Local />
+      <UseLocation />
     </View>
   );
 }
-
- 
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-}});
+  }
+});
+
 
 export default App;
 

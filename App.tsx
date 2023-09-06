@@ -5,6 +5,8 @@ import {
   StyleSheet, // basicamente um css
   TouchableOpacity, //vai funcionar como um botão
 } from 'react-native';
+import Home from "./src/View/Home";
+import Pagina1 from "./src/View/Pagina1";
 import { UseLocation } from './src/hooks/UseLocation';
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
     </View>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {

@@ -1,14 +1,13 @@
-import React from 'react'
-import {
-    View, // container
-    Text, //texto normal
-    StyleSheet, // basicamente um css
-    TouchableOpacity, //vai funcionar como um botão
-} from 'react-native';
-import { UseLocation } from '../hooks/UseLocation';
+import React from 'react';
+import { View, Text } from 'react-native';
+import ListUserPositions from '../hooks/ListUserPositions';
 
-export default function Pagina1({ navigation }) {
+const PositionsScreen = () => {
     return (
-        <UseLocation />
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <ListUserPositions />
+        </View>
     );
-}
+};
+
+export default PositionsScreen;
